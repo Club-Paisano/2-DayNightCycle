@@ -1,0 +1,64 @@
+body {
+  background-image:url(starfield.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100vh;
+  transition: all 3s;
+  text-align: center;
+
+}
+h1 {
+  font-size: 5em;
+  color:white;
+  text-shadow: 1px 1px #FFF;
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+
+.sunrise {
+  transition: all 3s ease;
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+  background-image: linear-gradient(to top, #58181A, #BC2909, #BA6D09,#71A8EE, #3072EB, #1552C6);
+
+}
+
+.noon {
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+  background-image: linear-gradient(to right, #e0eafc, #cfdef3);
+}
+
+.sunset {
+  /* width: 100%;
+  height: 100vh;
+  opacity: 1; */
+  background-image: linear-gradient(to top, #040308, #AD4A28, #DD723C, #FC7001,#DCB697, #9BA5AE, #3E5879, #020B1A);
+}
+
+button {
+  color: brown;
+  font-size:1.5em;
+  text-transform: uppercase;
+  border-radius: 10px;
+  transition: all .3s;
+}
+
+button:hover {
+  transform: rotate(180deg);
+}
+button[data-time="sunrise"] {
+  background-image: linear-gradient(to top, #58181A, #BC2909, #BA6D09,#71A8EE, #3072EB, #1552C6);
+}
+button[data-time="night"] {
+  background-image:url(starfield.png);
+}
+button[data-time="noon"] {
+  background-image: linear-gradient(to right, #e0eafc, #cfdef3);
+}
+button[data-time="sunset"] {
+  background-image: linear-gradient(to top, #040308, #AD4A28, #DD723C, #FC7001,#DCB697, #9BA5AE, #3E5879, #020B1A);
+}
